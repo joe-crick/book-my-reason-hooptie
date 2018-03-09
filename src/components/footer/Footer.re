@@ -3,7 +3,7 @@ let component = ReasonReact.statelessComponent("Header");
 let make = (_) => {
   ...component,
   render: (self) =>
-      <header style=(HeaderStyles.header)>
-        <h1 style=(HeaderStyles.title)>(ReasonReact.stringToElement("Book My Hooptie!"))</h1>
-      </header>
+        <footer style=(FooterStyles.footer)>
+          <h1 style=(FooterStyles.text)>(ReasonReact.stringToElement("Copyright 2018, Book my Hooptie"))</h1>
+        </footer>
 };

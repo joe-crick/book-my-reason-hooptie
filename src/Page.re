@@ -20,5 +20,6 @@ let make = (~message, _children) => {
   <div>
     <Header />
     <div onClick=(self.handle(handleClick))> (ReasonReact.stringToElement(message)) </div>
+    <Footer />
   </div>
 };

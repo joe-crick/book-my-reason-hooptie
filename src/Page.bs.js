@@ -4,6 +4,7 @@
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
+var Footer$ReactTemplate = require("./components/footer/Footer.bs.js");
 var Header$ReactTemplate = require("./components/header/Header.bs.js");
 
 var component = ReasonReact.statelessComponent("Page");
@@ -18,7 +19,7 @@ function make(message, _) {
   newrecord[/* render */9] = (function (self) {
       return React.createElement("div", undefined, ReasonReact.element(/* None */0, /* None */0, Header$ReactTemplate.make(/* array */[])), React.createElement("div", {
                       onClick: Curry._1(self[/* handle */0], handleClick)
-                    }, message));
+                    }, message), ReasonReact.element(/* None */0, /* None */0, Footer$ReactTemplate.make(/* array */[])));
     });
   return newrecord;
 }

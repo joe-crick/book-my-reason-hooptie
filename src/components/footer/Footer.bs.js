@@ -3,18 +3,18 @@
 
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
-var HeaderStyles$ReactTemplate = require("../header/HeaderStyles.bs.js");
+var FooterStyles$ReactTemplate = require("./FooterStyles.bs.js");
 
 var component = ReasonReact.statelessComponent("Header");
 
 function make() {
   var newrecord = component.slice();
   newrecord[/* render */9] = (function () {
-      return React.createElement("header", {
-                  style: HeaderStyles$ReactTemplate.header
+      return React.createElement("footer", {
+                  style: FooterStyles$ReactTemplate.footer
                 }, React.createElement("h1", {
-                      style: HeaderStyles$ReactTemplate.title
-                    }, "Book My Hooptie!"));
+                      style: FooterStyles$ReactTemplate.text
+                    }, "Copyright 2018, Book my Hooptie"));
     });
   return newrecord;
 }

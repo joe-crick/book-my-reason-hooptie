@@ -2,16 +2,16 @@
 'use strict';
 
 
-var header = {
+var footer = {
   color: "#444444",
   fontSize: "68px"
 };
 
-var title = {
+var text = {
   color: "#444444",
   fontSize: "28px"
 };
 
-exports.header = header;
-exports.title = title;
+exports.footer = footer;
+exports.text = text;
 /* No side effect */
