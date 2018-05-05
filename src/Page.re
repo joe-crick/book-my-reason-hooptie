@@ -16,10 +16,12 @@ let handleClick = (_event, _self) => Js.log("clicked!");
    `ReasonReact.element(Page.make(~message="hello", [||]))` */
 let make = (~message, _children) => {
   ...component,
-  render: (self) =>
-  <div>
-    <Header />
-    <div onClick=(self.handle(handleClick))> (ReasonReact.string(message)) </div>
-    <Footer />
-  </div>
+  render: self =>
+    <div>
+      <Header />
+      <div onClick=(self.handle(handleClick))>
+        (ReasonReact.string(message))
+      </div>
+      <Footer />
+    </div>,
 };
