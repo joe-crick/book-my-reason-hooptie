@@ -3,6 +3,7 @@
 
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
+var Str$ReactTemplate = require("../../utils/Str.bs.js");
 var HeaderStyles$ReactTemplate = require("./HeaderStyles.bs.js");
 
 var component = ReasonReact.statelessComponent("Header");
@@ -14,11 +15,14 @@ function make() {
                   style: HeaderStyles$ReactTemplate.header
                 }, React.createElement("h1", {
                       style: HeaderStyles$ReactTemplate.title
-                    }, "Book My Hooptie!"));
+                    }, Str$ReactTemplate.txt("Book My Hooptie!")));
     });
   return newrecord;
 }
 
+var str = Str$ReactTemplate.txt;
+
 exports.component = component;
+exports.str = str;
 exports.make = make;
 /* component Not a pure module */

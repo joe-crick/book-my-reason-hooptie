@@ -1,0 +1,1 @@
+/* let make = (_) => Component.gen("Test", <div></div>); */
